@@ -13,6 +13,8 @@ namespace Match3._Scripts.Grid
         private T[,] _gridArray;
         private int _height;
         private int _width;
+        public int Width => _width;
+        public int Height => _height;
 
         public static Grid2D<T> CreateVertical(int width, int height, float cellSize,
             Vector3 origin, bool isDebug = false)

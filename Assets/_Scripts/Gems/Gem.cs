@@ -17,5 +17,10 @@ namespace Match3._Scripts.Gems
         {
             return _gemSO;
         }
+
+        public void DestroyGem(float t = 0f)
+        {
+            Destroy(gameObject, t);
+        }
     }
 }
