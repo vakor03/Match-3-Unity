@@ -77,7 +77,7 @@ namespace Match3._Scripts.Grid
 
         public event Action<int, int, T> OnValueChanged;
 
-        private bool CoordinatesAreValid(int x, int y) => x >= 0 && y >= 0 && x < _width && y < _height;
+        public bool CoordinatesAreValid(int x, int y) => x >= 0 && y >= 0 && x < _width && y < _height;
 
         public Vector2Int GetXY(Vector3 worldPosition) =>
             _gridCoordinateConverter.WorldToGrid(worldPosition);
